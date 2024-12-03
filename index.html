@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>California High-Speed Rail Dashboard</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div id="dashboard" class="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 p-8">
+        <div class="max-w-7xl mx-auto space-y-8">
+            <!-- Header -->
+            <div class="relative text-center mb-16 p-8 bg-white rounded-2xl shadow-lg">
+                <div class="gradient-bar"></div>
+                <i data-lucide="train" class="mx-auto h-16 w-16 text-blue-600 mb-4"></i>
+                <h1 class="text-4xl font-bold text-gray-900 mb-4">California High-Speed Rail Project</h1>
+                <p class="text-xl text-gray-600">Ethical Analysis Dashboard</p>
+                
+                <!-- Progress Metrics -->
+                <div id="progress-metrics" class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
+                    <!-- Will be populated by JavaScript -->
+                </div>
+            </div>
+
+            <!-- Problem Statement -->
+            <div class="bg-gradient-to-r from-red-50 to-orange-50 border-red-200 shadow-lg p-4 rounded-lg">
+                <div class="flex items-start gap-2">
+                    <i data-lucide="alert-circle" class="h-5 w-5 text-red-600"></i>
+                    <div>
+                        <h2 class="text-red-600 text-lg font-semibold">Problem Statement</h2>
+                        <p class="mt-2 leading-relaxed">
+                            The project faces significant ethical challenges including delays from inadequate research, 
+                            political opposition, and uninformed decision-making, resulting in wasted taxpayer money 
+                            and worker mistreatment. Lack of transparency has eroded public trust.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stakeholders Section -->
+            <div id="stakeholders-section" class="card shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <!-- Will be populated by JavaScript -->
+            </div>
+
+            <!-- Ethical Issues and Solutions -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <!-- Ethical Issues -->
+                <div id="ethical-issues-section" class="card shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <!-- Will be populated by JavaScript -->
+                </div>
+
+                <!-- Solutions -->
+                <div id="solutions-section" class="card shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <!-- Will be populated by JavaScript -->
+                </div>
+            </div>
+
+            <!-- Lessons Learned -->
+            <div id="lessons-section" class="card shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <!-- Will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
